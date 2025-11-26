@@ -9,9 +9,9 @@ interface DashboardCardProps {
 }
 
 export const DashboardCard = ({ title, amount, icon: Icon, type = "default" }: DashboardCardProps) => {
-  const formattedAmount = new Intl.NumberFormat('en-US', {
+  const formattedAmount = new Intl.NumberFormat('en-IN', {
     style: 'currency',
-    currency: 'USD',
+    currency: 'INR',
   }).format(Math.abs(amount));
 
   const getColorClass = () => {
