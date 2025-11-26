@@ -32,7 +32,7 @@ const Index = () => {
     
     toast({
       title: "Transaction added",
-      description: `${transaction.type === "income" ? "Income" : "Expense"} of $${transaction.amount.toFixed(2)} recorded successfully.`,
+      description: `${transaction.type === "income" ? "Income" : "Expense"} of ₹${transaction.amount.toFixed(2)} recorded successfully.`,
     });
   };
 

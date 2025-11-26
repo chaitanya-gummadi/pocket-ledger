@@ -86,13 +86,13 @@ export const BudgetTracker = ({ totalExpenses }: BudgetTrackerProps) => {
               <div className="flex justify-between text-sm">
                 <span className="text-muted-foreground">Spent</span>
                 <span className="font-medium">
-                  ${totalExpenses.toFixed(2)} / ${budget.toFixed(2)}
+                  ₹{totalExpenses.toFixed(2)} / ₹{budget.toFixed(2)}
                 </span>
               </div>
               <Progress value={percentage} className="h-3" indicatorClassName={getProgressColor()} />
               <div className="flex justify-between text-xs text-muted-foreground">
                 <span>{percentage.toFixed(1)}% used</span>
-                <span>${remaining.toFixed(2)} remaining</span>
+                <span>₹{remaining.toFixed(2)} remaining</span>
               </div>
             </div>
 

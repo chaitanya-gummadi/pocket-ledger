@@ -68,9 +68,9 @@ export const CategoryChart = ({ transactions }: CategoryChartProps) => {
               </Pie>
               <Tooltip
                 formatter={(value: number) =>
-                  new Intl.NumberFormat("en-US", {
+                  new Intl.NumberFormat("en-IN", {
                     style: "currency",
-                    currency: "USD",
+                    currency: "INR",
                   }).format(value)
                 }
               />
